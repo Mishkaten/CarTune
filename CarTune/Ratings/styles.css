@@ -98,6 +98,7 @@ body {
 .btn{
   margin-left: 83%;
 }
+
 input {
   width: 100%;
   padding: 12px 20px;
@@ -107,6 +108,8 @@ input {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
+
 button {
   background-color: #4CAF50;
   border: none;
@@ -127,15 +130,25 @@ button:hover {
   color: black;
 }
 
+
 .footer {
-  position: absolute;
+  padding: 8px 8px;
+  background-color: rgba(227, 253, 253, 0.5);
+  position: fixed;
   bottom: 0;
   width: 100%;
+  transition: 1s;
 }
+
+.footer:hover {
+  background-color: #cbf1f5;
+}
+
 .footer .footer-container {
   display: flex;
   align-items: center;
 }
+
 .footer .footer-container .phone {
   width: 45%;
 }
