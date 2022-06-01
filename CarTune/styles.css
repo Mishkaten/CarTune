@@ -121,8 +121,31 @@ body {
 
 /* Mechanics Page */
 .mechanics {
-  margin-top: 1150px;
+  margin-top: 1300px;
   width: 800px;
+}
+
+.specialty{
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #4caf4f88;
+  color: black;
+}
+
+.place{
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #4caf4f88;
+  color: black;  
+}
+
+.mechanicsHead{
+  display: flex;
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 25px;
 }
 
 #mech_info {
@@ -163,6 +186,7 @@ body {
 }
 
 .rates {
+  display: flex;
   margin-top: 5%;
   padding: 12px 20px;
   border: 1px solid;
@@ -171,10 +195,12 @@ body {
 
 
 /* Search */
-
+#desc{
+  height: 150px;
+}
 /* Rate*/
 .revs {
-  margin-top: 500px;
+  margin-top: 600px;
 }
 
 .btn {
@@ -270,8 +296,8 @@ body {
     0 0 #1095c1;
 }
 
-/*Button Styling*/
-button {
+/*href button Styling*/
+a.href-button {
   background-color: #4CAF50;
   border: none;
   color: white;
@@ -285,12 +311,11 @@ button {
   transition: 1s;
 }
 
-button:hover {
+a.href-button:hover {
   border-radius: 25px;
   background-color: #4caf4f88;
   color: black;
 }
-
 
 /*Input Styling */
 input {
