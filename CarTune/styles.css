@@ -359,9 +359,11 @@ body {
   transform: rotate(45deg);
 }
 
+
 .spec{
   display: flex;
-  margin-right: ;
+  margin-right: 20%;
+  margin-top: 20%;
 }
 
 .searchMenu {
