@@ -118,6 +118,12 @@ body {
   width: 60%;
 }
 
+.infosSend {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
 
 /* Mechanics Page */
 .mechanics {
@@ -125,7 +131,7 @@ body {
   width: 800px;
 }
 
-.specialty{
+.specialty {
   text-align: center;
   padding: 10px 20px;
   border-radius: 25px;
@@ -133,15 +139,15 @@ body {
   color: black;
 }
 
-.place{
+.place {
   text-align: center;
   padding: 10px 20px;
   border-radius: 25px;
   background-color: #4caf4f88;
-  color: black;  
+  color: black;
 }
 
-.mechanicsHead{
+.mechanicsHead {
   display: flex;
   padding: 10px 20px;
   border: 1px solid;
@@ -195,9 +201,10 @@ body {
 
 
 /* Search */
-#desc{
+#desc {
   height: 150px;
 }
+
 /* Rate*/
 .revs {
   margin-top: 600px;
@@ -253,7 +260,7 @@ body {
   color: #c59b08;
 }
 
-.ratings{
+.ratings {
   background-color: rgba(255, 255, 255, 0.3);
   width: 800px;
   margin: auto;
@@ -294,6 +301,73 @@ body {
   text-shadow:
     0 -1.2em #000,
     0 0 #1095c1;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+/* Hide the default checkbox */
+.container input {
+  visibility: hidden;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: lightgray;
+}
+
+.container:hover input~.mark {
+  background-color: gray;
+}
+
+.container input:checked~.mark {
+  background-color: blue;
+}
+
+/* Create the mark/indicator (hidden when not checked) */
+.mark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the mark when checked */
+.container input:checked~.mark:after {
+  display: block;
+}
+
+/* Style the mark/indicator */
+.container .mark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.spec{
+  display: flex;
+  margin-right: ;
+}
+
+.searchMenu {
+  margin-top: 500px;
+  display: flex;
+  border-radius: 1px solid;
 }
 
 /*href button Styling*/
