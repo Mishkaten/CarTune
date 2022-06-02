@@ -8,6 +8,14 @@
     <title>SearchFor</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Bootstrap Multiselect CSS -->
+    <link rel="stylesheet" href="css/bootstrap-multiselect.css">
+
 </head>
 
 <body>
@@ -24,73 +32,113 @@
         </div>
     </div>
 
-    <div class="main-box">
-        <div class="main-box-container">
 
-            <div class="info">
-                <div class="info-container">
+    <p style="margin-top: 2%" id="txt">მოძებე შენთვის სასურველი სპეციალისტი</p>
 
-                    <div class="searchMenu">
+    <div class="multi-selector">
 
-                        <div>
-
-                            <div>
-                                 <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-                            </div>
-
-                            <div id="drp" class="spec">
-
-                                <div class="drp_left">
-                                    <label class="container">მატორისტი
-                                        <input type="checkbox">
-                                        <span class="mark"></span>
-                                    </label>
-
-                                    <label class="container">კარობკის მოხელე
-                                        <input type="checkbox">
-                                        <span class="mark"></span>
-                                    </label>
-
-                                    <label class="container">მალიარი
-                                        <input type="checkbox">
-                                        <span class="mark"></span>
-                                    </label>
-
-                                </div>
-
-                                <div class="drp_right" style="margin-left: 20px;">
-                                    <label class="container">ხადავშიკი
-                                        <input type="checkbox">
-                                        <span class="mark"></span>
-                                    </label>
-
-                                    <label class="container">ჟეშტიანშიკი
-                                        <input type="checkbox" checked="check">
-                                        <span class="mark"></span>
-                                    </label>
-
-                                    <label class="container">ელექტრიკი
-                                        <input type="checkbox" checked="check">
-                                        <span class="mark"></span>
-                                    </label>
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                    <div id="send" class="infoSend">
-                        <div style="margin: auto; display: flex; justify-content: center;">
-                            <a class="href-button">მოძებნე</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+        <div class="select-field">
+            <input type="text" name="" placeholder="აირჩიეთ სპეციალობა" id="" class="input-selector">
+            <span class="down-arrow">&blacktriangledown;</span>
         </div>
+        <!---------List of checkboxes and options----------->
+        <div class="list">
+
+            <label for="task1" class="task">
+                <input type="checkbox" id="task1">
+                ძრავის სპეციალისტი
+            </label>
+            <label for="task2" class="task">
+                <input type="checkbox" id="task2">
+                გადაცემათა კოლოფის სპეციალისტი
+            </label>
+            <label for="task3" class="task">
+                <input type="checkbox" id="task3">
+                დაიკების სისტემის სპეციალისტი
+            </label>
+            <label for="task4" class="task">
+                <input type="checkbox" id="task4">
+                მეთუნუქე
+            </label>
+
+            <label for="task5" class="task">
+                <input type="checkbox" id="task5">
+                მღებავი
+            </label>
+
+            <label for="task6" class="task">
+                <input type="checkbox" id="task6">
+                ელექტრო გაყვანილობის სპეციალისტი
+            </label>
+
+
+
+        </div>
+
+
     </div>
+
+    <div class="dropdown">
+        <span>აირჩიეთ უბანი</span>
+
+        <div class="dropdown-content">
+            <label for="task1" class="task">
+                <input type="radio" id="task1">
+                <p>ვაკე</p>
+            </label>
+
+            <label for="task2" class="task">
+                <input type="radio" id="task2">
+                <p>ვერა</p>
+            </label>
+
+            <label for="task3" class="task">
+                <input type="radio" id="task3">
+                <p>საბურთალო</p>
+            </label>
+
+
+        </div>
+
+
+
+    </div>
+
+    <div style="width: 16%; text-align: center; margin-left: 42%; margin-top: 10%;">
+        <a class="href-button">მოძებნე</a>
+    </div>
+
+    <script>
+        document.querySelector('.select-field').addEventListener('click', () => {
+            document.querySelector('.list').classList.toggle('show');
+            document.querySelector('.down-arrow').classList.toggle('rotate180');
+
+        });
+    </script>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 
     <div class="footer">
@@ -104,10 +152,23 @@
             </div>
         </div>
     </div>
-</body>
 
-<script>
-   
-</script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <!-- Bootstrap Multiselect JS -->
+    <script data-main="dist/js/" src="js/require.min.js"></script>
+    <script>
+        require(['bootstrap-multiselect'], function (purchase) {
+            $('#mySelect').multiselect();
+        });
+    </script>
+
+</body>
 
 </html>
