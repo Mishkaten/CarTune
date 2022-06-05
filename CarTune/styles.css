@@ -129,7 +129,7 @@ body {
 /* Mechanics Page */
 .mechanics {
   margin: auto;
-  margin-top: 25%;
+  margin-top: 35%;
   width: 800px;
 }
 
@@ -208,10 +208,6 @@ body {
 }
 
 /* Rate*/
-.revs {
-  margin-top: 40%;
-}
-
 .btn {
   margin: auto;
   margin-top: 5%;
