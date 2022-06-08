@@ -2,10 +2,15 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: FiraGO;
+  src: url(FiraGO-Regular.ttf);
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: FiraGO;
   background-color: rgba(227, 253, 253, 0.5);
 }
 
@@ -73,6 +78,13 @@ body {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 844px){
+  .mechanics{
+    max-width: 70%;
+  }
+}
+
 
 .main-box {
   margin-top: 10%;
@@ -295,11 +307,6 @@ body {
   transition: .3s;
 }
 
-#txt:hover {
-  text-shadow:
-    0 -1.2em #000,
-    0 0 #1095c1;
-}
 
 .container {
   display: block;

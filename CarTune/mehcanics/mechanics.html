@@ -25,9 +25,7 @@
     </div>
 
     <div class="main-box">
-
         <div class="info">
-
             <div class="mechanics">
                 <p id="txt">ხ ე ლ ო ს ა ნ ი</p>
                 <div class="mechanicsHead" style="padding: 20px 50px">
@@ -59,7 +57,8 @@
                         </div>
 
                         <div class="mech_right_bottom" style="margin: auto; display: flex; justify-content: center;">
-                            <a class="href-button" href="javascript:void(0)">555 555 555</a>
+                            <a onclick="myFunction()" class="href-button" id="num" href="javascript:void(0)">555
+                                555 555</a>
                             <a class="href-button" href="#">შეაფასე</a>
                         </div>
 
@@ -76,7 +75,7 @@
                         <p id="score"> 4.5 / 5 <i class="fa fa-star-o"></i> მიხეილ თენიეშვილი</p>
                         <p style="margin-bottom: 40px;">ძალიან კარგია ისაო ესაო პუწუ პაწუ </p>
                         <a>რედაქტირება</a>
-                        
+
                     </div>
                 </div>
 
@@ -88,7 +87,7 @@
                         <p id="score"> 4.5 / 5 <i class="fa fa-star-o"></i> მიხეილ თენიეშვილი</p>
                         <p style="margin-bottom: 40px;">ძალიან კარგია ისაო ესაო პუწუ პაწუ </p>
                         <a>რედაქტირება</a>
-                        
+
                     </div>
                 </div>
 
@@ -113,6 +112,11 @@
 </body>
 
 <script>
+    function myFunction() {
+
+
+        navigator.clipboard.writeText("555555555");
+    }
 </script>
 
 </html>
